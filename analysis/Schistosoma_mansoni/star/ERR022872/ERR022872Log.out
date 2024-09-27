@@ -1,0 +1,96 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir= :/Users/distiller/project/STARcompile/source
+STAR git: On branch master ; commit 73eaeb256684a2fc31ce306a95bbd27120dd8de4 ; diff files: 
+##### Command Line:
+STAR --genomeDir analysis/Schistosoma_mansoni/star/ref --runThreadN 4 --readFilesIn /dev/fd/63 --outFileNamePrefix analysis/Schistosoma_mansoni/star/ERR022872/ERR022872 --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 4000000 --outSAMattributes Standard --quantMode TranscriptomeSAM GeneCounts
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 analysis/Schistosoma_mansoni/star/ERR022872/ERR022872
+###### All USER parameters from Command Line:
+genomeDir                     analysis/Schistosoma_mansoni/star/ref     ~RE-DEFINED
+runThreadN                    4     ~RE-DEFINED
+readFilesIn                   /dev/fd/63        ~RE-DEFINED
+outFileNamePrefix             analysis/Schistosoma_mansoni/star/ERR022872/ERR022872     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+limitBAMsortRAM               4000000     ~RE-DEFINED
+outSAMattributes              Standard        ~RE-DEFINED
+quantMode                     TranscriptomeSAM   GeneCounts        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        4
+genomeDir                         analysis/Schistosoma_mansoni/star/ref
+readFilesIn                       /dev/fd/63   
+limitBAMsortRAM                   4000000
+outFileNamePrefix                 analysis/Schistosoma_mansoni/star/ERR022872/ERR022872
+outSAMtype                        BAM   SortedByCoordinate   
+outSAMattributes                  Standard   
+quantMode                         TranscriptomeSAM   GeneCounts   
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 4   --genomeDir analysis/Schistosoma_mansoni/star/ref   --readFilesIn /dev/fd/63      --limitBAMsortRAM 4000000   --outFileNamePrefix analysis/Schistosoma_mansoni/star/ERR022872/ERR022872   --outSAMtype BAM   SortedByCoordinate      --outSAMattributes Standard      --quantMode TranscriptomeSAM   GeneCounts   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --runThreadN 4   --genomeDir analysis/Schistosoma_mansoni/star/ref   --genomeFastaFiles data/Schistosoma_mansoni/reference/schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa      --genomeSAindexNbases 11   --sjdbGTFfile data/Schistosoma_mansoni/reference/schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gtf   --sjdbOverhang 75
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              data/Schistosoma_mansoni/reference/schistosoma_mansoni.PRJEA36577.WBPS19.genomic.fa        ~RE-DEFINED
+genomeSAindexNbases           11     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  75     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   data/Schistosoma_mansoni/reference/schistosoma_mansoni.PRJEA36577.WBPS19.annotations.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               403509662   3315388679        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 10
+1	SM_V10_1	87984048	0
+2	SM_V10_Z	86692428	88080384
+3	SM_V10_3	49793710	174850048
+4	SM_V10_4	46471573	224657408
+5	SM_V10_2	45716244	271319040
+6	SM_V10_6	24696076	317194240
+7	SM_V10_5	24128858	342097920
+8	SM_V10_7	19942475	366477312
+9	SM_V10_WSR	5969970	386662400
+10	SM_V10_MITO	26917	392691712
+--sjdbOverhang = 75 taken from the generated genome
+Started loading the genome: Fri Aug 16 15:52:34 2024
+
+Genome: size given as a parameter = 403509662
+SA: size given as a parameter = 3315388679
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=11  nSAi=5592404
+nGenome=403509662;  nSAbyte=3315388679
+GstrandBit=32   SA number of indices=803730588
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 403509662 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 403509662 bytes
+SA file size: 3315388679 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 3315388679 bytes
+Loading SAindex ... done: 24466875 bytes
+Finished loading the genome: Fri Aug 16 15:52:36 2024
+
+Sum of all Genome bytes: 611389621
+Sum of all SA bytes: 375634487394
+Sum of all SAi bytes: 2637435228
+Processing splice junctions database sjdbN=69906,   pGe.sjdbOverhang=75 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+
+Transcriptome.cpp:18:Transcriptome: exiting because of *INPUT FILE* error: could not open input file /geneInfo.tab
+Solution: check that the file exists and you have read permission for this file
+          SOLUTION: utilize --sjdbGTFfile /path/to/annotations.gtf option at the genome generation step or mapping step
+
+Aug 16 15:52:39 ...... FATAL ERROR, exiting
